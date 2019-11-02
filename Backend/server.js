@@ -8,14 +8,32 @@ app.get('/', function (req, res) {
 app.get('/home', function(req, res) {
     var x = {
         title: 'Home',
-        dataChillded: [],
-        dataHot: [],
-        dataSteam: [],
+        dataChillded: [
+            {
+                title: 'Average Chilled water Use',
+                unit: 'KBTU/HR',
+                value: '1607.0982948229'
+            }
+        ],
+        dataHot: [
+            {
+                title: 'Average Hot water Use',
+                unit: 'KBTU/HR',
+                value: '380.54830832'
+            }
+        ],
+        dataSteam: [
+            {
+                title: 'Average Steam Use',
+                unit: 'KBTU/HR',
+                value: '1552.34315785199'
+            }
+        ],
         dataElectricity: [
             {
-                title: 'Average Use',
+                title: 'Average Electricity Use',
                 unit: 'kWh',
-                value: '100'
+                value: '172086.508692129'
             }
         ]
     }
