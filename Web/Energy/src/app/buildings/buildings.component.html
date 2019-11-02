@@ -1,0 +1,12 @@
+<div class="container">
+  <mat-form-field appearance="outline">
+      <input matInput placeholder="Search Buildings" (keydown)="onKeyPressed($event)" [(ngModel)]="filter"/>
+    <mat-icon matSuffix>search</mat-icon>
+  </mat-form-field>
+
+  <mat-grid-list cols="3" gutterSize="1em">
+    <mat-grid-tile *ngFor="let building of filteredBuildings">
+      <app-building-summary-view [building]="building"></app-building-summary-view>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

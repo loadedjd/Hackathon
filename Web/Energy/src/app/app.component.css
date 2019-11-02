@@ -1,0 +1,20 @@
+.toolbar-grid {
+  display: grid;
+  padding: 0px;
+  grid-gap: 16px;
+  grid-auto-flow: column;
+}
+
+
+.toolbar-button {
+  color: black;
+}
+
+.toolbar-button:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.router-container {
+  padding: 8px;
+}

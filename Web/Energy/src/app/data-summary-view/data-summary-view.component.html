@@ -1,0 +1,21 @@
+<mat-grid-list cols="4" rowHeight="14em">
+  <mat-grid-tile *ngFor="let dataObj of dataView">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>
+          {{dataObj.title}}
+        </mat-card-title>
+
+        <mat-card-subtitle>
+          {{dataObj.unit}}
+        </mat-card-subtitle>
+      </mat-card-header>
+
+      <mat-card-content>
+        <div>
+          <h1>{{dataObj.value | number: '1.2-2'}} </h1>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>

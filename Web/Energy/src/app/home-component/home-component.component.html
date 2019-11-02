@@ -1,0 +1,9 @@
+<div class="container">
+  <mat-tab-group>
+    <mat-tab *ngFor="let section of sections" label={{section.title}}>
+      <app-data-summary-view [dataView]="section.data">
+
+      </app-data-summary-view>
+    </mat-tab>
+  </mat-tab-group>
+</div>
